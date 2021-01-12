@@ -41,3 +41,23 @@ body {
   margin-right: auto;
   width: 50%;
 }
+
+#centerText {
+  align-content: center;
+}
+
+header {
+  align-content: center;
+}
+
+#nationInfo {
+  align-content: center;
+}
+
+.centerText {
+  align-content: center;
+}
+
+#cultureInfo {
+  align-content: center;
+}
