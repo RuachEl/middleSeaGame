@@ -129,6 +129,10 @@ table {
   font-weight: bold;
 }
 
+.nav-button:hover {
+  background-color: #3e8e41;
+}
+
 legend {
   margin-left: 40%;
   border-radius: 10px;
