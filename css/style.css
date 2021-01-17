@@ -11,16 +11,17 @@ a:visited {
 }
 
 a:hover {
-  color: red;
-  background-color: transparent;
+  background-color: #3e8e41;
+  color: black;
   text-decoration: underline;
 }
 
 a:active {
-  color: rgb(0, 255, 76);
+  color: lightgreen);
   background-color: transparent;
   text-decoration: underline;
 }
+  
 
 body {
   background-color: blanchedalmond;
@@ -123,7 +124,7 @@ table {
   background-color: #3e8e41;
 }
 
-#home-button {
+.nav-button {
   font-size: x-large;
   font-weight: bold;
 }
