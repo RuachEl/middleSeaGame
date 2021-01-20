@@ -1,0 +1,7 @@
+Middle Sea Game Color Scheme:
+
+Background and Header/Sidebar Text: ffebcd - Blanched Almond
+Text and Bars: 000000 - Black
+Highlight: b8ed3c - Dull Lime
+Sidebar: 68716d - Steel Blue
+Header: 504449 - Purpleish Grey
