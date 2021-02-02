@@ -95,6 +95,10 @@ a:active {
   margin-left: 160px;
 }
 
+#history p {
+  font-weight: 200;
+}
+
 .bigLine {
   border: 3px solid #000000;
 }
@@ -114,6 +118,7 @@ a:active {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  height: auto;
   border: 2px solid #000000;
   box-shadow: 3px 5px;
 }
