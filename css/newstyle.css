@@ -47,7 +47,6 @@ fieldset {
   margin-bottom: 10px;
   width: auto;
   text-indent: 25px;
-  
 }
 
 table {
@@ -89,6 +88,11 @@ a:active {
   color: red;
   background-color: transparent;
   text-decoration: underline;
+}
+
+#nationInfo {
+  align-content: center;
+  margin-left: 160px;
 }
 
 .bigLine {
