@@ -1,112 +1,238 @@
-<!DOCTYPE html>
-<html lang='en'>
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Web Site containing all cannon information for the game world of middle sea">
-    <meta name="author" content="Klint Keown">
-    <meta name="keywords" content="tintade, tintadian, dnd">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/newstyle.css" />
-    <title>Land of Middle Sea</title>
-</head>
-<body>
-    <header id='linkBar'>
-        <h1>Grand Duchy of Hapalotmaa</h1>
-        <br>
-        <div class="sidenav">
-          <a href="../index.html" target="_blank" class="nav-button">Home</a> 
-          <div class="dropdown">
-              <button class="dropbtn">Cultures</button> 
-              <div class="dropdown-content">
-                  <a href="../cultures/luari.html">Luari</a>
-                  <a href="../cultures/slovan.html">Slovan</a>
-                  <a href="../cultures/berberan.html">Berberan</a>
-                  <a href="../cultures/tallian.html">Tallian</a>
-                  <a href="../cultures/ruthan.html">Ruthan</a>
-                  <a href="../cultures/portuzian.html">Portuzian</a>
-                  <a href="../cultures/guantzi.html">Guantzi</a>
-              </div>
-          </div>
-          <div class="dropdown">
-              <button class="dropbtn">Nations</button> 
-              <div class="dropdown-content">
-                  <a href="nations/tintade.html">Tintadian Empire</a>
-                  <a href="nations/calabia.html">Principality of Calabia</a>
-                  <a href="nations/servia.html">Principality of Servia</a>
-                  <a href="nations/jung.html">Kingdom of Jung</a>
-                  <a href="nations/roykaria.html">Grand Duchy of Roykaria</a>
-                  <a href="nations/hapalotmaa.html">Grand Duchy of Hapalotmaa</a>
-                  <a href="nations/kogendia.html">Principality of Kogendia</a>
-                  <a href="nations/vyshia.html">Grand Duchy of Vyshia</a>
-                  <a href="nations/katinia.html">Katinian Theocracy</a>
-                  <a href="nations/belbahrinia.html">Principality of Belbahrinia</a>
-                  <a href="nations/verisalia.html">Federation of Verisalia</a>
-              </div>
-          </div>
-    
-    
-    
-          <div class="dropdown">
-              <button class="dropbtn">Factions</button> 
-              <div class="dropdown-content">
-                  <a href='index.html'>Test</a>
-              </div>
-          </div>
-          
-          <div class="dropdown">
-              <button class="dropbtn">Pantheon</button> 
-              <div class="dropdown-content">
-                  <a href="../pantheon/barus-bellum.html">Tintadian Empire</a>
-                  <a href="../pantheon/cara-pacum.html">Principality of Calabia</a>
-                  <a href="../pantheon/nigel-magus.html">Principality of Servia</a>
-                  <a href="../pantheon/dacem-altra.html">Kingdom of Jung</a>
-                  <a href="../pantheon/cernuno-eponsia-vere.html">Grand Duchy of Roykaria</a>
-                  <a href="../pantheon/cymba-navita.html">Grand Duchy of Hapalotmaa</a>
-                  <a href="../pantheon/arella-mer.html">Principality of Kogendia</a>
-                  <a href="../pantheon/lokan.html">Grand Duchy of Vyshia</a>
-                  <a href="../pantheon/balmora.html">Katinian Theocracy</a>
-                  <a href="../pantheon/fizzygug.html">Principality of Belbahrinia</a>
-              </div>
-          </div>
-          <div>
-              <a href="../houseRules.html"target="_blank" class="nav-button" >House Rules</a> 
-          </div>
-          <div>
-              <a href="../adLog.html"target="_blank" class="nav-button">Adventure Log</a>
-          </div>
-      </div>
-        <hr class='bigLine'>
-    </header>
-    <main>
-      <section id='nationInfo'>
-      <a href="../Images/hapalotmaa.jpeg" target="_blank"><img src="../Images/hapalotmaa.jpeg" height="300"></a>
-      <br>
-      <h2>Nation Information</h2>
-      <hr>
-      <form>
-          <b><di>Leader:</di></b><span>   </span><span>   </span><di></di>
-          <br>
-          <b><di>Capital:</di></b><span>   </span><span>   </span><di>Sinamiio</di>
-          <br>
-          <b><di>Population:</di></b><span>   </span><span>   </span><di>3.4 Million</di>
-          <br>
-          <b><di>Culture & Language:</di></b><span>   </span><span>   </span><di>Slovan</di>
-          <br>
-          <b><di>Exports:</di></b><span>   </span><span>   </span><di></di>
-          <br>
-          <b><di>Imports:</di></b><span>   </span><span>   </span><di></di>
-          <br>
-      </form>
-      </section>
-      <hr>
-    <section id='history'> 
-      <div class='centerText'>
-        <b><di>History:</di></b>
-      </div>
-    </section>
-    </main>
-    <footer>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    </footer>
-</body>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <title>Grand Duchy of Hapalotmaa</title>
+  </head>
+  <body>
+    <!--Top Bar-->
+    <div class="top-bar">
+        <div class="container">
+            <div class="col-12"></div>
+        </div>
+    </div>
+    <!--End Top Bar-->
+
+    <!--Nav Bar-->
+    <nav class="navbar bg-dark navbar-light navbar-expand-lg">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="../img/logoWhite.png" alt="Logo" title="logo" style="max-height: 3rem;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="../index.html" class="btn btn-secondary active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Cultures
+                            </a>
+                            
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a href="#" class="dropdown-item">Luari</a>
+                                <a href="#" class="dropdown-item">Slovan</a>
+                                <a href="#" class="dropdown-item">Berberan</a>
+                                <a href="#" class="dropdown-item">Tallian</a>
+                                <a href="#" class="dropdown-item">Ruthan</a>
+                                <a href="#" class="dropdown-item">Portuzian</a>
+                                <a href="#" class="dropdown-item">Guantzi</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Nations
+                            </a>
+                            
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a href="/nations/tintade.html" class="dropdown-item">Tintade</a>
+                                <a href="/nations/calabia.html" class="dropdown-item">Calabia</a>
+                                <a href="/nations/servia.html" class="dropdown-item">Servia</a>
+                                <a href="/nations/jung.html" class="dropdown-item">Jung</a>
+                                <a href="/nations/roykaria.html" class="dropdown-item">Roykaria</a>
+                                <a href="/nations/hapalotmaa.html" class="dropdown-item">Hapalotmaa</a>
+                                <a href="/nations/kogendia.html" class="dropdown-item">Kogendia</a>
+                                <a href="/nations/vyshia.html" class="dropdown-item">Vyshia</a>
+                                <a href="/nations/katinia.html" class="dropdown-item">Katinia</a>
+                                <a href="/nations/belbahrinia.html" class="dropdown-item">Belbahrinia</a>
+                                <a href="/nations/verisalia.html" class="dropdown-item">Verisalia</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Factions
+                            </a>
+                            
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a href="#" class="dropdown-item">Mercenary's Guild</a>
+                                <a href="#" class="dropdown-item">Trade Guilds</a>
+                                <a href="#" class="dropdown-item">Nobility</a>
+                                <a href="#" class="dropdown-item">Priesthood</a>
+                                <a href="#" class="dropdown-item">Minor Factions</a>
+                                <!-- <a href="#" class="dropdown-item">Null</a> -->
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Pantheon
+                            </a>
+                            
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                              <a href="/pantheon/barus-bellum.html" class="dropdown-item">Barus Bellum</a>
+                              <a href="/pantheon/cara-pacum.html" class="dropdown-item">Cara Pacum</a>
+                              <a href="/pantheon/nigel-magus.html" class="dropdown-item">Nigel Magus</a>
+                              <a href="/pantheon/dacem-altra.html" class="dropdown-item">Dacem Altra</a>
+                              <a href="/pantheon/cernuno-eponsia-vere.html" class="dropdown-item">The Siblings</a>
+                              <a href="/pantheon/cymba-navita.html" class="dropdown-item">Cyma Navita</a>
+                              <a href="/pantheon/arella-mer.html" class="dropdown-item">Arella Mer</a>
+                              <a href="/pantheon/lokan.html" class="dropdown-item">Lokan</a>
+                              <a href="/pantheon/balmora.html" class="dropdown-item">The Balmora</a>
+                              <a href="/pantheon/fizzygug.html" class="dropdown-item">Fizzygug</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Nav Bar-->
+
+    <!--Image Carousel-->
+
+    <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="10000">
+
+        <!-- Carousel Content-->
+      <div class="carousel-inner">
+        <div class="carousel-item active justify-content-center">
+          <img src="/Images/calbia.jpeg" alt="Belbahrinia Map" class="w-100" style="max-height: 50rem;">
+          <div class="carousel-caption">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-8 bg-custom d-none d-lg-block py-3 mx-0">
+                  <h1>Grand Duchy of Hapalotmaa</h1>
+                  <div class="border-top border-primary w-50 mx-auto my-3"></div>                  
+                  <a href="/Images/calbia.jpeg" class="btn btn-light btn-md" target="_blank">See Map</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+		</div>
+
+        <!--End Carousel Content-->
+        <!--Prev and Next Buttons-->
+        <a href="#carousel" class="carousel-control-prev" role="button" data-slide="prev">
+			<span class="fas fa-chevron-left fa-5x"></span>
+		</a>
+		<a href="#carousel" class="carousel-control-next" role="button" data-slide="next">
+			<span class="fas fa-chevron-right fa-5x"></span>
+		</a>
+        <!--End Prev and Next Buttons-->
+    </div>
+        <!--End Image Carousel-->
+
+    <!--Main Page Heading-->
+    
+    
+    <!--End Heading-->
+    
+    <!--Main Page Content-->
+    <div class="col-12 justify-content-center text-center mt-5 w-25 mx-auto">
+      <h2 class="text-dark pt-4">Nation Info</h2>
+      <div class="border-top border-secondary w-25 mx-auto my-3"></div>
+      <table class="table">
+        <tr>
+          <th scope="row">Leader:</th>
+            <td>TBD</td>
+          </tr>
+          <tr>
+        <th scope="row">Capital:</th>
+          <td>Sinamiio</td>
+        </tr>
+        <tr>
+        <th scope="row">Population:</th>
+          <td>3.4 Million</td>
+        </tr>
+        <tr>
+        <th scope="row">Culture and Language:</th>
+          <td>Slovan</td>
+        </tr>
+        <tr>
+        <th scope="row">Imports:</th>
+          <td>TBD</td>
+        </tr>
+        <tr>
+        <th scope="row">Exports:</th>
+          <td>TBD</td> 
+        </tr>
+
+      </table>  
+  </div>
+  <div class="col-12 text-center mt-5 w-50 mx-auto">
+      <h1 class="text-dark pt-4">Historical Overview</h1>
+          <div class="border-top border-secondary w-25 mx-auto my-3"></div>
+          <p class="lead">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus similique repellendus inventore maiores aliquam ipsum soluta sapiente obcaecati omnis dolore! Vel nisi laboriosam vitae? Fugit recusandae molestias quibusdam iste ab.
+          </p>    
+          <p class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quam recusandae cupiditate, voluptatibus repellat doloribus aperiam asperiores! Culpa et ipsa inventore aut nesciunt! Earum, nisi ab! Repellendus odit quibusdam itaque?
+          </p>  
+  </div>
+
+    <!--End Page Content-->
+
+    <!--Modal Popup-->
+    <!--End Modal Popup-->
+
+    <!--Start Jumbotron-->
+    <!--End Jumbotron-->
+  
+    <div class="socket bg-dark text-light text-center py-3">
+		<p>&copy; Klint Keown 2021</p>
+	</div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>
