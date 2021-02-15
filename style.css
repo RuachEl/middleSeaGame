@@ -21,6 +21,13 @@
 #carousel {
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
 }
+.carousel .item {
+  height: 750px;
+}
+.carousel img {
+  width: auto;
+  height: 75 0px;
+}
 .carousel-inner {
   max-height: 50rem !important;
 }

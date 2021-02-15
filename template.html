@@ -1,24 +1,395 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/style.css" /> 
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <title>Middle Sea Game</title>
+  </head>
+  <body>
+    <!--Top Bar-->
+    <div class="top-bar">
+        <div class="container">
+            <div class="col-12"></div>
+        </div>
+    </div>
+    <!--End Top Bar-->
+
+    <!--Nav Bar-->
+    <nav class="navbar bg-dark navbar-light navbar-expand-lg">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="img/logoWhite.png" alt="Logo" title="logo" style="max-height: 5rem;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="btn btn-secondary active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Cultures
+                            </a>
+                            
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Luari</a>
+                                <a class="dropdown-item" href="#">Slovan</a>
+                                <a class="dropdown-item" href="#">Berberan</a>
+                                <a href="#" class="dropdown-item">Tallian</a>
+                                <a href="#" class="dropdown-item">Ruthan</a>
+                                <a href="#" class="dropdown-item">Portuzian</a>
+                                <a href="#" class="dropdown-item">Guantzi</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Nations
+                            </a>
+                            
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Tintade</a>
+                                <a class="dropdown-item" href="#">Calabia</a>
+                                <a class="dropdown-item" href="#">Servia</a>
+                                <a href="#" class="dropdown-item">Jung</a>
+                                <a href="#" class="dropdown-item">Roykaria</a>
+                                <a href="#" class="dropdown-item">Hapalotmaa</a>
+                                <a href="#" class="dropdown-item">Kogendia</a>
+                                <a href="#" class="dropdown-item">Vyshia</a>
+                                <a href="#" class="dropdown-item">Katinia</a>
+                                <a href="#" class="dropdown-item">Belbahrinia</a>
+                                <a href="#" class="dropdown-item">Verisalia</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Factions
+                            </a>
+                            
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Null</a>
+                                <a class="dropdown-item" href="#">Null</a>
+                                <a class="dropdown-item" href="#">Null</a>
+                                <a href="#" class="dropdown-item">Null</a>
+                                <a href="#" class="dropdown-item">Null</a>
+                                <a href="#" class="dropdown-item">Null</a>
+                                <a href="#" class="dropdown-item">Null</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Pantheon
+                            </a>
+                            
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Barus Bellum</a>
+                                <a class="dropdown-item" href="#">Cara Pacum</a>
+                                <a class="dropdown-item" href="#">Nigel Magus</a>
+                                <a href="#" class="dropdown-item">Dacem Altra</a>
+                                <a href="#" class="dropdown-item">The Siblings</a>
+                                <a href="#" class="dropdown-item">Cyma Navita</a>
+                                <a href="#" class="dropdown-item">Arekka Mer</a>
+                                <a href="#" class="dropdown-item">Lokan</a>
+                                <a href="#" class="dropdown-item">The Balmora</a>
+                                <a href="#" class="dropdown-item">Fizzygug</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Nav Bar-->
+
+    <!--Image Carousel-->
+
+    <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="10000">
+
+        <!-- Carousel Content-->
+        <div class="carousel-inner">
+			<div class="carousel-item active justify-content-center">
+				<img src="img/middleSea.jpg" alt="World Map" class="w-100">
+				<div class="carousel-caption">
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-8 bg-custom d-none d-lg-block py-3 mx-0">
+								<h1>Middle Sea</h1>
+								<div class="border-top border-primary w-50 mx-auto my-3"></div>
+								<h3 class="lead pb-3">Realm under Pressure</h3>
+                                <a href="img/middleSea.jpg" class="btn btn-light btn-md" target="_blank">See Map</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="carousel-item ">
+					<img src="img/kogendia.jpeg" alt="Kogendia" class="w-100">
+					<div class="carousel-caption">
+						<div class="container">
+							<div class="row justify-content-end text-right">
+								<div class="col-5 bg-custom d-none d-lg-block py-1 px-0 pr-3 ">
+									<h3>Kogendia</h3>
+                                    <p class="lead pb-3">Current Campaign Location</p>
+                                    <a href="img/kogendia.jpeg" class="btn btn-light btn-md" target="_blank">See Map</a>
+                                </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+        <!--End Carousel Content-->
+        <!--Prev and Next Buttons-->
+        <a href="#carousel" class="carousel-control-prev" role="button" data-slide="prev">
+			<span class="fas fa-chevron-left fa-5x"></span>
+		</a>
+		<a href="#carousel" class="carousel-control-next" role="button" data-slide="next">
+			<span class="fas fa-chevron-right fa-5x"></span>
+		</a>
+        <!--End Prev and Next Buttons-->
+    </div>
+        <!--End Image Carousel-->
+
+    <!--Main Page Heading-->
+    <div class="col-12 text-center mt-5 w-50 mx-auto">
+        <h1 class="text-dark pt-4">Historical Overview</h1>
+            <div class="border-top border-secondary w-25 mx-auto my-3"></div>
+            <p class="lead">
+                For all of history the forces of the Light and the Dark have battled for the devotion of mortal
+                souls. A balanced had been maintained between the two allowing for both good and evil to exist in the
+                world. Many generations ago, even for the Elfs, the forces of the Dark managed to get the upper hand.
+            </p>    
+            <p class="lead">
+                Brutal battles raged for years. The non-evil races were pushed farther and farther back fleeing
+                the Dark forces and the dense black fog that followed them. The Light's forces finally made a stand
+                around an inland sea that has since become called the Middle Sea. The Dark's forces have held a line
+                around the Middle Sea since then.
+            </p>  
+    </div>
+
+    <div class="col-12 text-center mt-5 w-50 mx-auto">
+        <h2 class="text-dark pt-4">Current Campaign</h2>
+            <div class="border-top border-secondary w-25 mx-auto my-3"></div>
+            <p class="lead">
+                The Kingdom of Kogendia is undergoing quite rapid social change. The old nobility, the King,
+                the Jarls, and their Thanes, are losing ground to a growing middle class of merchants and craftsmen.
+                While these tradesmen hold no legal authority, the massive amounts of money they have, and continue,
+                to amass has given them power that the nobles can no longer ignore.
+            </p>
+            <p class="lead">
+                The tradesmen have organized themselves into guilds and colleges. There are 8 major guilds:
+                The Legal Guild, Linen Merchants, Wool Merchants, Silk Merchants, Fine Leather Merchants, The
+                Banking Guild, The Medical Guild, and the Mages Guild. The remainder of the trades are grouped into
+                4 colleges: the College of Bread and Meat(food and fiber production and distribution), The College of
+                Artificers(locksmiths, black and white smiths, and everyone else that works with wood or stone), The
+                College of Leather(cobblers, tanners, and saddlers), and The College of Linens(retailers, tailors, and
+                those in the hospitality industry). These divisions have political reasons you will have to uncover.
+            </p>
+            <p class="lead">       
+                There is one guild that operates outside of the normal guild structure. That guild is the
+                Mercenary's Guild. They provide guards, watchmen, the city watch, etc. for the towns and people of
+                Kogendia. They even provide soldiers to those with the coin. They also have a branch they call
+                specialists. The specialists handle assignments that are short-term in duration and too dangerous for
+                most of their members to want to deal with. You are a newly recruited specialist. Welcome to the
+                Corps.
+            </p>  
+    </div>
+    <!--End Heading-->
     
-    <title>Middle Sea</title>
-</head>
-<body>
-<header>
+    <!--Main Page Content-->
+    <div class="container my-5">
+        <div class="row py-4">
+            <div  class="col-4 mb-4 my-lg-auto">
+                <h4 class="my-4 bg-custom pl-2">Honnestad</h4>
+                <p class="mb-4">Honnestad is home to many tradesmen. Most of them work with wool and timber,
+                    but there are a good smattering of other trades here. Nothing fancy, but the people can 
+                    get what they want in a reasonable amount of time.
+                </p>
+                <p class="lead my-4 bg-custom pl-2">Last Time</p>
+                <p class="mb-4">
+                    The heroes collapse the profane ruins, and carry the mayor to safety. However, he died 
+                    en rout to the keep. Without delay, his body is brought to Commander Ivar - who just 
+                    finished a meeting with the mayor. Now, the mystery thickens.
+                </p>
+                <p class="mb-4"> 
+                    With a charge from Commander Ivar, the heroes go to Honnestad and confront the 'mayor'. 
+                    In a flash, the creature changes into the mayor's secretary, before fleeing. After capturing 
+                    the creature, we bring it back to the keep. Accompanied by the village, we searched for some 
+                    clue to show the truth, but our efforts were thwarted, when the creature escaped.
+                </p>
+                <p class="mb-4">
+                    With no other options, an inquisitor is on the way to help with our task. -Sam "Durk" Tuck
+                </p>
+            </div>
+        <!--Image Carousel-->
+            <div class="col-8">                
+                <div id="carouselSmall" class="carousel slide" data-ride="carousel" data-interval="10000">
 
-</header>
-<main>
+                    <!-- Carousel Content-->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active justify-content-center"  style="max-height: 23rem;">
+                            <img src="img/honnestad.png" alt="World Map" class="w-100">
+                            <div class="carousel-caption">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-8 bg-custom d-none d-lg-block py-3 mx-0">
+                                            <a href="img/honnestad.png" class="btn btn-light btn-sm" target="_blank">See Map</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                                <img src="img/Coliletri County - Starting Area.jpeg" alt="Kogendia" class="w-100">
+                                <div class="carousel-caption">
+                                    <div class="container">
+                                        <div class="row justify-content-center">
+                                            <div class="col-5 bg-custom d-none d-lg-block py-1 px-0 pr-3">
 
-</main>
-<footer>
+                                                <a href="img/Coliletri County - Starting Area.jpeg" class="btn btn-light btn-md" target="_blank">See Map</a>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-</body>
+                    <!--End Carousel Content-->
+                    <!--Prev and Next Buttons-->
+                    <a href="#carouselSmall" class="carousel-control-prev" role="button" data-slide="prev">
+                        <span class="fas fa-chevron-left fa-5x"></span>
+                    </a>
+                    <a href="#carouselSmall" class="carousel-control-next" role="button" data-slide="next">
+                        <span class="fas fa-chevron-right fa-5x"></span>
+                    </a>
+                    <!--End Prev and Next Buttons-->
+                </div>
+            </div>           
+        </div>
+    </div>
+    <!--Players-->
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-12 text-center">
+                <h2>The Characters</h2>
+                <div class="border-top border-secondary w-75 mx-auto my-3"></div>
+            </div>
+        </div>
+        <div class="row my-5 p-2">
+            <div class="col-md-3 my-4 border border-secondary rounded">
+                <img src="img/durk.png" alt="Pic of Durk" class="w-100">
+                <h5 class="my-4">Durk</h5>
+                <p>
+                    Born to the Smith's guild, Durk Hammerfell made a living with his father, 
+                    working the forges. Despite being a dwarf and being at home in the heart of 
+                    the furnace, Durk wanted to branch out; to see what was beyond the walls of 
+                    his home. When the Mercenary Guild began recruiting, Durk followed the call 
+                    of Barus Bellum. Taking with him his hammer, and gifted the Shield of his 
+                    father, the bold and fiery dwarf set on on adventure, promising to return 
+                    home with riches, glory, and story
+                </p>
+            </div>
+            <div class="col-md-3 my-4 border border-secondary rounded">
+                <img src="img/aurelia.png" alt="Pic of Aurelia" class="w-100">
+                <h5 class="my-4">Aurelia</h5>
+                <p>
+                    At a young age she was separated from her family. Spent a lot of time living 
+                    on her own and off the land, where eventually she would meet her druidic mentor 
+                    and come to live with her people. After many years, she found herself yearning 
+                    for exploration. Her life seemed stagnant, easy. So she continued to wander alone.  
+                    Eventually in her travels, her skills became recognized and she was recruited to 
+                    be a mercenary.
+                </p>
+            </div>
+            <div class="col-md-3 my-4 border border-secondary rounded">
+                <img src="img/ufear.png" alt="Pic of Ufear" class="w-100">
+                <h5 class="my-4">Ufear</h5>
+                <p> 
+                    Ufear was born to a family of dwarfish jewel craftsmen.  His parents were able to 
+                    afford for decent education and a few luxuries time to time. However the mountain dwarfs 
+                    lost their ancestral homes deep in the mountains to the impending darkness.   
+                    causing them to live closer to other cultures while struggling to hold to their own.  
+                    The life of the displaced peoples has a way of shaping extreme ideologies. Ufear 
+                    sought involvement with the Deep Ones, a Dwarf Pride group.  The group is small and in its 
+                    infancy,but they are secretive and maintain a more local political agenda.  Ufear received 
+                    some initial training from them in adolescence because of family ties, and is 
+                    considering full membership.  He currently wishes to prove his abilities for the 
+                    time being.
+                </p>
+            </div>
+            <div class="col-md-3 my-4 border border-secondary rounded">
+                <img src="img/mia.png" alt="Pic of Mia" class="w-100">
+                <h5 class="my-4">Mia</h5>
+                <p>Mia was born into a merchant family. Her mother and father belong to the college 
+                    of leather. Hoping to follow in their footsteps one day, Mia learned to hunt from 
+                    a very young age as well as skin. She decided to travel for a bit and joined the 
+                    mercenary guild, learning all that she can about how communications and networking 
+                    work while sharpening her hunting skills. Just hunting monsters, not bears.</p>
+            </div>
+        </div>
+    </div>
+    <!--Players End-->
+    <!--End Page Content-->
+
+    <!--Modal Popup-->
+    <div class="modal fade" id="modal1">
+		<div class="modal-dialog">
+			<img src="img/middleSea.jpg" alt="world map" class="w-100">
+		</div>
+	</div>
+    <div class="modal fade" id="modal2">
+		<div class="modal-dialog">
+			<img src="img/kogendia.jpeg" alt="kogendia" class="w-100">
+		</div>
+	</div>
+    <!--End Modal Popup-->
+
+    <!--Start Jumbotron-->
+    <!--End Jumbotron-->
+  
+    <div class="socket bg-dark text-light text-center py-3">
+		<p>&copy; Klint Keown 2021</p>
+	</div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>
