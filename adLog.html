@@ -1,34 +1,248 @@
-<!DOCTYPE html>
-<html lang='en'>
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Web Site containing all cannon information for the game world of middle sea">
-    <meta name="author" content="Klint Keown">
-    <meta name="keywords" content="tintade, tintadian, dnd">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <title>Land of Middle Sea</title>
-</head>
-<body>
-    <header id='linkBar'>
-        <h1>Adventure Log</h1>
-        <br>
-        <h2>
-        <a href="index.html" >Home</a> 
-        <a href="cultures.html" >Cultures</a> 
-        <a href="nations.html">Nations</a>
-        <a href="factions.html">Factions</a>
-        <a href="pantheon.html">Pantheon</a>
-        <a href="houseRules.html">House Rules</a>
-        </h2>
-        
-        <hr class='bigLine'>
-    </header>
-    <main>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    </main>
-    <footer>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <title>Middle Sea Game</title>
+  </head>
+  <body>
+    <!--Top Bar-->
+    <div class="top-bar">
+        <div class="container">
+            <div class="col-12"></div>
+        </div>
+    </div>
+    <!--End Top Bar-->
 
-    </footer>
-</body>
+    <!--Nav Bar-->
+    <nav class="navbar bg-dark navbar-light navbar-expand-lg">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="img/logoWhite.png" alt="Logo" title="logo" style="max-height: 5rem;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="btn btn-secondary active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Cultures
+                            </a>
+                            
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Luari</a>
+                                <a class="dropdown-item" href="#">Slovan</a>
+                                <a class="dropdown-item" href="#">Berberan</a>
+                                <a href="#" class="dropdown-item">Tallian</a>
+                                <a href="#" class="dropdown-item">Ruthan</a>
+                                <a href="#" class="dropdown-item">Portuzian</a>
+                                <a href="#" class="dropdown-item">Guantzi</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Nations
+                            </a>
+                            
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Tintade</a>
+                                <a class="dropdown-item" href="#">Calabia</a>
+                                <a class="dropdown-item" href="#">Servia</a>
+                                <a href="#" class="dropdown-item">Jung</a>
+                                <a href="#" class="dropdown-item">Roykaria</a>
+                                <a href="#" class="dropdown-item">Hapalotmaa</a>
+                                <a href="#" class="dropdown-item">Kogendia</a>
+                                <a href="#" class="dropdown-item">Vyshia</a>
+                                <a href="#" class="dropdown-item">Katinia</a>
+                                <a href="#" class="dropdown-item">Belbahrinia</a>
+                                <a href="#" class="dropdown-item">Verisalia</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Factions
+                            </a>
+                            
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Null</a>
+                                <a class="dropdown-item" href="#">Null</a>
+                                <a class="dropdown-item" href="#">Null</a>
+                                <a href="#" class="dropdown-item">Null</a>
+                                <a href="#" class="dropdown-item">Null</a>
+                                <a href="#" class="dropdown-item">Null</a>
+                                <a href="#" class="dropdown-item">Null</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Pantheon
+                            </a>
+                            
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Barus Bellum</a>
+                                <a class="dropdown-item" href="#">Cara Pacum</a>
+                                <a class="dropdown-item" href="#">Nigel Magus</a>
+                                <a href="#" class="dropdown-item">Dacem Altra</a>
+                                <a href="#" class="dropdown-item">The Siblings</a>
+                                <a href="#" class="dropdown-item">Cyma Navita</a>
+                                <a href="#" class="dropdown-item">Arekka Mer</a>
+                                <a href="#" class="dropdown-item">Lokan</a>
+                                <a href="#" class="dropdown-item">The Balmora</a>
+                                <a href="#" class="dropdown-item">Fizzygug</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="adLog.html" class="btn btn-secondary active">Adventure Log</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Nav Bar-->
+
+    <!--Main Page Heading-->
+    <div class="container">
+        <div class="row justify-content-center">
+            <h1>Adventure Log</h1>
+        </div>
+        <div class="border-top border-secondary w-50 mx-auto my-3"></div>
+    </div>
+
+    
+    <!--End Heading-->
+    
+    <!--Main Page Content-->
+    <div class="container">
+        <div class="row justify-content-center pb-5 mb-5">
+            <div  class="col-8 mb-4 my-lg-auto">
+                <h2 class="my-4 bg-custom p-2">Last Time</h2>
+                <p class="mb-4">
+                    A new face arrived at the gates of the keep. A cleric called Herbert, 
+                    who was initially skeptical about our cause. After visiting town and 
+                    seeing the mayor firsthand, Herbert joined our cause. However, the present 
+                    situation became more unsettling when Inquisitor Peter arrived in the morning.
+                </p>
+                <p class="mb-4"> 
+                    "All charges against you have been dropped," he said. Inquisitor Peter asked to 
+                    speak with commander Ivar, in private. The mayor's body went missing. The guards 
+                    who were watching over the body were brutalized - one missing. The vampire hunter's 
+                    grandson. 
+                </p>
+                <p class="mb-4">
+                    After deciding to acquire his trunk of hunter's equipment, we headed back to the 
+                    profane dungeon. It had been cleared of some of the rubble. The deeper we descended 
+                    into the hellish halls, blood was thick enough to taste. Deeper into the heart of the 
+                    place, we found the grandson - torn apart and painting a room. Though, the silver key 
+                    of his grandfather remained. After retrieving the key, we left the place as quickly as 
+                    possible. Returning to the keep, we opened up the trunk, to find hunting supplies - 
+                    silver cord, silver daggers, silver bolts, holy water, stakes, and more. Now, our heroes 
+                    are armed for the quest ahead.-Sam "Durk" Tuck
+                </p>
+                <h3 class="text-center">Older Adventures</h3>
+                <div class="border-top border-secondary w-50 mx-auto my-3"></div>
+                <div class="row">
+                    <h5 class="my-4 bg-custom p-2">2/10/2021</h5>
+                    <p class="mb-4">
+                        The heroes collapse the profane ruins, and carry the mayor to safety. However, he died 
+                        en rout to the keep. Without delay, his body is brought to Commander Ivar - who just 
+                        finished a meeting with the mayor. Now, the mystery thickens. 
+                    </p>
+                    <p class="mb-4"> 
+                        With a charge from Commander Ivar, the heroes go to Honnestad and confront the 'mayor'. 
+                        In a flash, the creature changes into the mayor's secretary, before fleeing. After capturing 
+                        the creature, we bring it back to the keep. Accompanied by the village, we searched for some 
+                        clue to show the truth, but our efforts were thwarted, when the creature escaped.
+                    </p>
+                    <p class="mb-4"> 
+                        With no other options, an inquisitor is on the way to help with our task.
+                    </p>
+                </div>
+                <div class="row">
+                    <h5 class="my-4 bg-custom p-2">1/31/2021</h5>
+                    <p class="mb-4"> 
+                        Delving into the violated ruins, our heroes faced many undead horrors. Droves of zombies, were-rats, 
+                        stitched owl bears, and golems sewn of men's bodies. In the bowels of the dungeon, we found the Mayor 
+                        of Honnestad, with vampiric puncture wounds on his neck. Taking time to recover from many close fights, 
+                        we resume here.
+                    </p>
+                </div>
+                <div class="row">
+                    <h5 class="my-4 bg-custom p-2">1/24/2021</h5>
+                    <p class="mb-4">
+                        Our intrepid heroes spent some time learning about Honnestad. Commander Ivar is away for a couple of days, 
+                        yet something about the town of roughly 700 isn't quite right. With a cloaked figure leaving a cryptic message, 
+                        our heroes head west, to a ruined building that reeks of evil.
+                    </p>
+                    <p class="mb-4">
+                        Descending into the cellar of this place, our party finds themselves in a den of murder. Zombies seem to be the 
+                        least of the terrors, as a mosaic of Decam Altra, the God of Death, is set in the stone. What lay ahead of our brave 
+                        adventurers?
+                    </p>
+                </div>
+                <div class="row">
+                    <h5 class="my-4 bg-custom p-2">1/20/2021</h5>
+                    <p class="mb-4">
+                        Our group of adventurers arrived in Honnestad, and met with Commander Ivar, a blunt old dwarf who got straight to business.
+                        Our quest was clear and simple: clear out the goblins from a nearby hideout, and recover the remains of the adventurers who 
+                        went before us. Accepting the quest, our party headed to the goblin's lair. There were a number of traps and heavy fights that 
+                        we encountered, and good loot slipped through our fingers. However, we managed to secure the remains of the adventurers, keep 
+                        the spoils, and rescue a blacksmith for Honnestad. Thus, our tale resumes...
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>   
+
+    <!--Start Jumbotron-->
+    <!--End Jumbotron-->
+  
+    <div class="socket bg-dark text-light text-center py-3 fixed-bottom">
+		<p>&copy; Klint Keown 2021</p>
+	</div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>
